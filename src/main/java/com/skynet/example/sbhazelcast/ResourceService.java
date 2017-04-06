@@ -1,5 +1,7 @@
 package com.skynet.example.sbhazelcast;
 
+import java.util.Calendar;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.ResponseEntity;
@@ -18,6 +20,7 @@ public class ResourceService {
     	Resource resource = new Resource();
     	resource.setContent(response.getBody());
     	resource.setUrl(url);
+    	resource.setDate(Calendar.getInstance().getTime());
     	return resource;
     }
 
