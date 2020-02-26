@@ -11,3 +11,9 @@ Run application locally
 ```bash
 mvn spring-boot:run
 ```
+
+Usage
+```
+http://localhost:8080/resource?url=httpbin.org/get
+http://localhost:8080/resource?url=jsonplaceholder.typicode.com/users/1
+```
